@@ -11,6 +11,7 @@ local function download_files()
         "command_line_interface.lua",
         -- Add more filenames as needed
         -- TODO: Implement automatic file listing
+        -- Issue URL: https://github.com/unkokaeru/willow/issues/1
     }
 
     for _, filename in ipairs(filenames) do
