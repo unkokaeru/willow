@@ -1,9 +1,7 @@
 # Willow
 
-[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/unkokaeru/willow?label=version)](https://github.com/unkokaeru/willow)
-[![Lines Of Code](https://tokei.rs/b1/github/unkokaeru/willow?category=code)](https://github.com/unkokaeru/willow)
-[![Continuous Integration (CI) Tests](https://img.shields.io/github/actions/workflow/status/unkokaeru/willow/continuous_integration.yml?label=tests)](https://github.com/unkokaeru/willow)
 [![GitHub last commit](https://img.shields.io/github/last-commit/unkokaeru/willow)](https://github.com/unkokaeru/willow)
+[![Lines Of Code](https://tokei.rs/b1/github/unkokaeru/willow?category=code)](https://github.com/unkokaeru/willow)
 
 A flexible Lua library for CC: Tweaked, providing robust logging and a user-friendly command line interface.
 
@@ -29,7 +27,7 @@ Unknown usage, currently in development.
 
 ## Documentation
 
-For more information, you can find the documentation within the [docs](./docs/index.md) directory or on the project's [GitHub Pages](https://unkokaeru.github.io/willow/).
+Currently in development.
 
 ## Contributing
 
