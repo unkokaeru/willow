@@ -50,7 +50,7 @@ local function download_willow_file(willow_file, downloaded_file_name)
         GET_COMMAND,
         WILLOW_SOURCE_REPOSITORY ..
         willow_file .. FILE_EXTENSION,
-        downloaded_file_name .. FILE_EXTENSION
+        WILLOW_DIRECTORY .. downloaded_file_name .. FILE_EXTENSION
     )
 end
 
@@ -58,26 +58,26 @@ end
 --- Downloads all willow files.
 local function main()
     -- Create the willow directory.
-    print("Creating willow directory...")
+    print("Creating willow directory: " .. WILLOW_DIRECTORY)
     shell.run(MAKE_DIRECTORY_COMMAND, WILLOW_DIRECTORY)
 
     -- Download all willow files.
     for _, item in pairs(WILLOW_FILE_STRUCTURE) do
         if not item.files then
             print("Downloading willow file: " .. item.name)
-            download_willow_file(WILLOW_DIRECTORY .. item.name)
+            download_willow_file(item.name)
 
             return 0
         end
 
         -- Create the directory.
         print("Creating willow directory: " .. item.name)
-        shell.run(MAKE_DIRECTORY_COMMAND, WILLOW_DIRECTORY .. item.name)
+        shell.run(MAKE_DIRECTORY_COMMAND, item.name)
 
         -- Download all files within the directory.
         for _, file in pairs(item.files) do
             print("Downloading willow file: " .. item.name .. "/" .. file)
-            download_willow_file(WILLOW_DIRECTORY .. item.name .. "/" .. file)
+            download_willow_file(item.name .. "/" .. file)
         end
     end
 
