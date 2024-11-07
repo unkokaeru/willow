@@ -52,6 +52,7 @@ local function download_willow_file(willow_file, downloaded_file_name)
         willow_file .. FILE_EXTENSION,
         WILLOW_DIRECTORY .. downloaded_file_name .. FILE_EXTENSION
     )
+    print("Downloaded willow file: " .. WILLOW_DIRECTORY .. downloaded_file_name .. FILE_EXTENSION)
 end
 
 
