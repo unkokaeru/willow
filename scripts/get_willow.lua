@@ -84,7 +84,7 @@ local function main()
     -- Create a willow file to run the package.
     print("Creating Willow file.")
     local file = fs.open("willow.lua", "w")
-    file.write(
+    file.writeLine(
         "shell.run(\"" ..
         WILLOW_DIRECTORY .. WILLOW_FILE_STRUCTURE.main.name .. FILE_EXTENSION ..
         "\")"
