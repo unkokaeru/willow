@@ -15,7 +15,7 @@ local MAKE_DIRECTORY_COMMAND = "mkdir"
 -- The willow repository.
 local WILLOW_SOURCE_REPOSITORY = "https://raw.githubusercontent.com/unkokaeru/willow/main/source/"
 -- The directory to save the willow files to.
-local WILLOW_DIRECTORY = "/usr/lib/willow/"
+local WILLOW_DIRECTORY = "/rom/programs/willow/"
 -- The structure of the willow files.
 local WILLOW_FILE_STRUCTURE = {
     config = {name = "config", files = {

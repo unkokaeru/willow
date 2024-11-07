@@ -25,7 +25,7 @@ constants.HIDDEN_DIRECTORY = ".willow/"
 constants.PACKAGES_DIRECTORY = "packages/"
 
 -- Local libraries directory
-constants.LOCAL_LIBRARIES_DIRECTORY = "/usr/lib/willow-packages/"
+constants.LOCAL_LIBRARIES_DIRECTORY = "/rom/programs/willow-packages/"
 
 -- Database file
 constants.DATABASE_FILE = "willow-database.json"
@@ -37,8 +37,6 @@ constants.INSTALLED_PACKAGES_FILE = "installed-packages.json"
 constants.BLANK_PACKAGES = {
     packages = {},
 }
-
--- TODO: Move path constants to a paths module
 
 
 --- UUID CONSTANTS ---
