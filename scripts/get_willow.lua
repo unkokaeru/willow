@@ -5,7 +5,6 @@
 --- @license MIT
 --- @author William Fayers
 
-local shell = require("rom.programs.shell")
 print("Downloading willow...")
 
 --- Constants
