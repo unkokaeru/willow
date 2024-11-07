@@ -6,6 +6,7 @@
 --- @author William Fayers
 
 local shell = require("rom.programs.shell")
+print("Downloading willow...")
 
 --- Constants
 -- The command to download a file.
@@ -58,25 +59,30 @@ end
 --- Downloads all willow files.
 local function main()
     -- Create the willow directory.
+    print("Creating willow directory...")
     shell.run(MAKE_DIRECTORY_COMMAND, WILLOW_DIRECTORY)
 
     -- Download all willow files.
     for _, item in pairs(WILLOW_FILE_STRUCTURE) do
         if not item.files then
+            print("Downloading willow file: " .. item.name)
             download_willow_file(WILLOW_DIRECTORY .. item.name)
 
             return 0
         end
 
         -- Create the directory.
+        print("Creating willow directory: " .. item.name)
         shell.run(MAKE_DIRECTORY_COMMAND, WILLOW_DIRECTORY .. item.name)
 
         -- Download all files within the directory.
         for _, file in pairs(item.files) do
+            print("Downloading willow file: " .. item.name .. "/" .. file)
             download_willow_file(WILLOW_DIRECTORY .. item.name .. "/" .. file)
         end
     end
 
+    print("Willow downloaded successfully.")
     return 0
 end
 
