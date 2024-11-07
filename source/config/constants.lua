@@ -24,8 +24,8 @@ constants.HIDDEN_DIRECTORY = ".willow/"
 -- Packages directory
 constants.PACKAGES_DIRECTORY = "packages/"
 
--- Local libraries directory
-constants.LOCAL_LIBRARIES_DIRECTORY = "/rom/programs/willow-packages/"
+-- Local packages directory
+constants.LOCAL_PACKAGES_DIRECTORY = "/packages/willow-packages/"
 
 -- Database file
 constants.DATABASE_FILE = "willow-database.json"

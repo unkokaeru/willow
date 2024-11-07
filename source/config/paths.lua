@@ -22,6 +22,6 @@ paths.willow_packages = constants.REPO_URL ..
                 constants.PACKAGES_DIRECTORY
 
 -- Local packages directory
-paths.local_packages = constants.LOCAL_LIBRARIES_DIRECTORY
+paths.local_packages = constants.LOCAL_PACKAGES_DIRECTORY
 
 return paths
