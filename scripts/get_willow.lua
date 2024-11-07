@@ -79,9 +79,19 @@ local function main()
             download_willow_file(item.name)
         end
     end
+    print("Willow files downloaded.")
 
-    print("Willow downloaded successfully.")
-    shell.run(WILLOW_DIRECTORY .. WILLOW_FILE_STRUCTURE.main.name)
+    -- Create a willow file to run the package.
+    print("Creating Willow file.")
+    local file = fs.open("willow.lua", "w")
+    file.write(
+        "shell.run(\"" ..
+        WILLOW_DIRECTORY .. WILLOW_FILE_STRUCTURE.main.name .. FILE_EXTENSION ..
+        "\")"
+    )
+    print("Willow file created.")
+
+    shell.run("willow.lua")
     return 0
 end
 
