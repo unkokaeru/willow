@@ -81,6 +81,7 @@ local function main()
     end
 
     print("Willow downloaded successfully.")
+    shell.run(WILLOW_DIRECTORY .. WILLOW_FILE_STRUCTURE.main.name)
     return 0
 end
 
