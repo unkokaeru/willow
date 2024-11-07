@@ -33,7 +33,7 @@ local WILLOW_FILE_STRUCTURE = {
         "print_utilities",
         "string_utilities"
     }},
-    main = {name = "main", files = {}}
+    main = {name = "main", files = nil}
 }
 -- The file extension.
 local FILE_EXTENSION = ".lua"
