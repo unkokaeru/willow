@@ -63,21 +63,19 @@ local function main()
 
     -- Download all willow files.
     for _, item in pairs(WILLOW_FILE_STRUCTURE) do
-        if not item.files then
+        if item.files then
+            -- Create the directory.
+            print("Creating willow directory: " .. item.name)
+            shell.run(MAKE_DIRECTORY_COMMAND, item.name)
+
+            -- Download all files within the directory.
+            for _, file in pairs(item.files) do
+                print("Downloading willow file: " .. item.name .. "/" .. file)
+                download_willow_file(item.name .. "/" .. file)
+            end
+        else
             print("Downloading willow file: " .. item.name)
             download_willow_file(item.name)
-
-            return 0
-        end
-
-        -- Create the directory.
-        print("Creating willow directory: " .. item.name)
-        shell.run(MAKE_DIRECTORY_COMMAND, item.name)
-
-        -- Download all files within the directory.
-        for _, file in pairs(item.files) do
-            print("Downloading willow file: " .. item.name .. "/" .. file)
-            download_willow_file(item.name .. "/" .. file)
         end
     end
 
