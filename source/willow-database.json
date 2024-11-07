@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Willow Database",
+    "description": "A JSON object representing the Willow database.",
+    "packages": {
+        "example-package": {
+            "name": "example-package",
+            "description": "An example package.",
+            "version": "1.0.0",
+            "dependencies": {
+                "example-dependency": "1.0.0"
+            }
+        },
+        "example-dependency": {
+            "name": "example-dependency",
+            "description": "An example dependency.",
+            "version": "1.0.0",
+            "dependencies": {}
+        }
+    }
+}
