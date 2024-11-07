@@ -33,7 +33,7 @@ local WILLOW_FILE_STRUCTURE = {
         "print_utilities",
         "string_utilities"
     }},
-    main = {name = "main", files = nil}
+    main = {name = "main", files = {}}
 }
 -- The file extension.
 local FILE_EXTENSION = ".lua"
@@ -64,10 +64,10 @@ local function main()
 
     -- Download all willow files.
     for _, item in pairs(WILLOW_FILE_STRUCTURE) do
-        if item.files then
+        if #item.files > 0 then
             -- Create the directory.
             print("Creating willow directory: " .. item.name)
-            shell.run(MAKE_DIRECTORY_COMMAND, item.name)
+            shell.run(MAKE_DIRECTORY_COMMAND, WILLOW_DIRECTORY .. item.name)
 
             -- Download all files within the directory.
             for _, file in pairs(item.files) do
