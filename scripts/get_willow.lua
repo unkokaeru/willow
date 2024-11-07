@@ -5,7 +5,7 @@
 --- @license MIT
 --- @author William Fayers
 
-local shell = require("cc.shell")
+local shell = require("rom.programs.shell")
 
 --- Constants
 -- The command to download a file.
