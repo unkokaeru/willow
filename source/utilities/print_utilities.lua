@@ -1,8 +1,6 @@
 --- Utility functions for working with printing.
 --- @module "utilities.print_utilities"
 
-local term = require("term")
-
 local constants = require("config.constants")
 local logging = require("modules.logging")
 
