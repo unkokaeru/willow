@@ -1,8 +1,6 @@
 --- Utility functions for working with networks.
 --- @module "utilities.network_utilities"
 
-local http = require("internet")
-
 local logging = require("modules.logging")
 local string_utilities = require("utilities.string_utilities")
 
