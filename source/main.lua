@@ -5,8 +5,6 @@
 --- @license MIT
 --- @author William Fayers
 
-local shell = require("cc.shell")
-
 local command_line_interface = require("modules.command_line_interface")
 local logging = require("modules.logging")
 
