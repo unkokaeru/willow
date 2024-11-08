@@ -1,9 +1,6 @@
 --- Utility functions for working with files.
 --- @module "utilities.file_utilities"
 
-local fs = require("filesystem")
-local textutils = require("textutils")
-
 local logging = require("modules.logging")
 
 local logger = logging.get_logger("file_utilities", "file_utilities.log")
