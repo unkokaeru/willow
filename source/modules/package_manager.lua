@@ -1,8 +1,6 @@
 --- Functions for managing packages.
 --- @module "modules.package_manager"
 
-local textutils = require("textutils")
-
 local constants = require("config.constants")
 local logging = require("modules.logging")
 local file_utilities = require("utilities.file_utilities")
