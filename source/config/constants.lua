@@ -1,8 +1,6 @@
 --- Constants used by the Willow package manager.
 --- @module "config.constants"
 
-local colors = require("colors")
-
 local constants = {}
 
 
