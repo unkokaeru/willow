@@ -38,6 +38,7 @@ function Logger:new(name, log_file, level)
     end
 
     setmetatable(instance, self)  -- Simulate inheritance.
+    self.__index = self  -- Ensure that the instance can access methods in Logger.
     return instance
 end
 
