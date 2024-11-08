@@ -1,7 +1,6 @@
 --- Functions for logging.
 --- @module "modules.logging"
 
-local fs = require("filesystem")
 local constants = require("config.constants")
 local print_utilities = require("utilities.print_utilities")
 
